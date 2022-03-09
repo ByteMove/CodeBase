@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>内边距问题</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.ha {
+			height: 80px;
+			width: 80px;
+			/*padding: 20px;内边距上下左右都是20px*/
+			/*padding:10px 20px;内边距上下是10px,左右是20px*/
+			/*padding: 10px 20px 30px;内边距上是10，左右是20，下是30*/
+			/*padding: 10px 20px 30px 40px;内边距上是10，右是20，下是30，左是40，顺时针旋转*/
+
+		}
+		.yu {
+			/*盒子是200*200，但当加入padding后 盒子会被padding撑开，要求盒子仍然是200*200*/
+			/*width: 200px;
+			height: 200px;*/
+			width: 180px;
+			height: 180px;
+			padding: 10px;/*大盒子的宽和高会适当的改变*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ha">my name is limei</div>
+	<div class="yu"></div>
+</body>
+</html>

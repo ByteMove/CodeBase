@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>伸缩布局</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	section {
+		width: 80%;
+		height: 300px;
+		margin: 100px auto;
+		display: flex;/*在父元素添加伸缩布局*/
+		min-width: 500px;/*section宽度的最小值*/
+
+	}
+	section div {
+		
+		height: 100%;
+		flex: 1;/*每个孩子分到的份数*/
+		
+	}
+	section div:nth-child(1) {
+		background-color: pink;
+		flex: 2;
+		/*宽度也能固定设置*/
+	}
+	section div:nth-child(2) {
+		background-color: green;
+		margin: 0 10px;
+	}
+	section div:nth-child(3) {
+		background-color: yellow;
+	}
+	</style>
+</head>
+<body>
+	<section>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+	</section>
+</body>
+</html>

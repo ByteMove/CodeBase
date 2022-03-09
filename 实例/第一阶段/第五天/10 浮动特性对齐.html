@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.father {
+		width: 300px;
+		height: 300px;
+		background-color: #ccc;
+		padding: 50px;
+	}
+	.son {
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		float: right;/*浮动不会紧靠边框，也不会超过内边距*/
+		/*一个父盒子里一个子盒子需要浮动，其他子盒子都需要浮动，这样才能一行对齐显示*/
+	}
+	</style>
+</head>
+<body>
+<div class="father">
+	<div class="son"></div>
+</div>
+</body>
+</html>

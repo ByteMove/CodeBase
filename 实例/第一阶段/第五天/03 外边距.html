@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>外边距</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.father {
+			width: 500px;
+			height: 500px;
+			background-color: #ccc;
+			/*padding-top: 100px;或者给父盒子添加一个边框,使用内边距，但是会撑大盒子边框*/
+			/*border: 1px solid #ccc;需要给父盒子添加一个边框*/
+			overflow: hidden;/*溢出隐藏，使盒子可以添加上外边距，且不会撑大盒子*/
+			
+
+		}
+		.son {
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			/*margin-top: 100px;这是不正确的，son会带动father一起向下移动*/
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+<div class="father">
+	<div class="son"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meat charset="utf-8">
+	<style type="text/css">
+	.top  {
+		width: 200px;
+		height: 200px;
+		background-color: green;
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;/*左边定位为50%，水平居中要把盒子向左平移盒子的一半*/
+		top: 50%;
+		margin-top: -100px;/*上边定位为50%，垂直居中要把盒子向上平移盒子的一半*/
+	}
+	.nav {
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		margin: 50px auto;
+		/*float: left;
+		position: absolute;加了浮动和绝对定位的盒子margin:0 auto;就失效了*/
+
+	}
+	</style>
+</head>
+<body>
+<div class="top"></div>
+<div class="nav"></div>
+</body>
+</html>

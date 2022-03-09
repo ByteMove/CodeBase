@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.father {
+			height: 50px;
+			width: 200px;
+			background-color: #ccc;
+			/*padding-left: 10px;*/
+
+		}
+		.son {
+			width: 100px;/*否则会撑大，此时可以用margin-left*/
+			background-color: blue;/*当子盒子没给定宽度，子盒子和父盒子的宽度一样，即使设置padding也不会将父盒子撑大，*/
+			/*margin-left: 10px;*/
+			/*padding-left: 10px;*/
+
+		}
+	</style>
+</head>
+<body>
+<div class="father">
+	<div class="son">哈哈哈</div>
+</div>
+</body>
+</html>

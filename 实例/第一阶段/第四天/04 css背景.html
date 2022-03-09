@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css背景</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*body{
+			background-color: pink;
+			background-image: url(图片/1.jpg);
+			background-repeat: no-repeat;图片是否平铺 repeat-x横向平铺 repeat-y纵向平铺
+		}*/
+		div{
+			width: 600px;
+			height: 600px;
+			background-color: green;
+			background-image: url(图片/1.jpg);
+			background-repeat: no-repeat;
+			/*background-position: center center;top bottom left right*/
+			/*background-position: top;当只写了一个方位名词，另一个默认居中*//*方位名词上下没有顺序*/
+			/*background-position: 10px 20px;可以跟值px，但是x必须在前面，y在后面*/
+			background-position: 10px center;
+			background-attachment: fixed;/*scroll滚动，fixed固定*/
+			}		
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

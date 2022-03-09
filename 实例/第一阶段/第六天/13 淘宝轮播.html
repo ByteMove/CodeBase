@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>淘宝轮播</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	div {
+		width: 520px;
+		height: 280px;
+		margin: 100px auto;
+		position: relative;
+	}
+	.tb a {
+		width: 24px;
+		height: 36px;
+		position: absolute;
+		top: 50%;
+		margin-top: -18px;
+		display: block;
+	}
+	.left {
+		left: 0;
+	}
+	.right {
+		right: 0;
+	}
+	.tb ul {
+		width: 70px;
+		height: 13px;
+		background: rgba(255,255,255,0.3);
+		position: absolute;
+		left: 50%;
+		margin-left: -35px;
+		bottom: 18px;
+		border-radius: 10px;
+		;
+	}
+	li {
+		list-style: none;
+	}
+	.tb ul li{
+		width: 8px;
+		height: 8px;
+		background-color: #fff;
+		border-radius: 50%;
+		float: left;
+		margin: 3px;
+	}
+	.tb .col {
+		background-color: #f40;
+	}
+	</style>
+</head>
+<body>
+	<div class="tb">
+		<img src="图片/tb.jpg">
+		<a href="#" class="left"><img src="图片/left.png" /></a>
+		<a href="#" class="right"><img src="图片/right.png" /></a>
+		<ul>
+			<li class="col"><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div>
+</body>
+</html>

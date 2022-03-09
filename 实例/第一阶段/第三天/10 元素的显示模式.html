@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>元素的显示模式</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			/*display:inline;将块级元素转化为行内元素*/
+		}
+		span{
+			background-color: green;
+			display: block;/*将行内元素转化为块级元素*/
+			height: 150px;
+			width: 150px;
+
+		}
+		a{
+			color: #000000;
+			display: inline-block;/*将行内元素转化为行内块元素*/
+			width: 20px;
+			height: 80px;
+			background-color: blue;
+
+		}
+		a:hover{
+			background-color: orange;
+		}
+
+	</style>
+</head>
+<body>
+<!--块级元素可以设计宽高，只能放置一个元素；行内元素则不行，可以放多个元素-->
+<!--行内块元素：img,input,td 在一行上但是可以修改宽高-->
+	<div>块级元素</div>
+	<span>行内元素</span>
+	<a href="#">谷歌</a>
+</body>
+</html>

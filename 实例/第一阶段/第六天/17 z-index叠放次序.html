@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	div {
+		width: 200px;
+		height: 200px;
+		position: absolute;/*定位时，后来者居上*/
+	}
+	.red {
+		background-color: red;
+		z-index: 1;/*默认为0，不用写单位，值越大位置越往上*/
+	}
+	.blue {
+		background-color: blue;
+		top: 50px;
+		left: 50px;
+		z-index: 2;
+	}
+	.green {
+		background-color: green;
+		top: 100px;
+		left: 100px;
+	}
+	</style>
+</head>
+<body>
+<div class="red"></div>
+<div class="blue"></div>
+<div class="green"></div>
+</body>
+</html>

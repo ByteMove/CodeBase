@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3d旋转</title>
+	<meta chatset="utf-8">
+	<style type="text/css">
+	body {
+		perspective: 300px;/*放在父元素中，值越小，3d立体效果就越明显*/
+	}
+	div {
+		width: 767px;
+		height: 620px;
+		transition: all 5s;
+	}
+	div:hover {
+		transform: rotateY(360deg);/*绕Y轴旋转*/
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="图片/1498446043198.png">
+	</div>
+</body>
+</html>

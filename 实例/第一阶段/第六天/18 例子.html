@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>例子</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	div {
+		width: 250px;
+		height: 200px;
+		border: 1px solid #ccc;
+		float: left;
+		margin-left: -1px;/*使边框重叠*/
+		position: relative;
+	}
+	div:hover {
+		border: 1px solid #f40;/*由于压住边框，有一条边框颜色不能显示*/
+		/*position: relative;相对定位脱离标准流，比标准流高一级，是浮在上面的，但位置仍在*/
+		z-index: 1;/*使层级变大，位置居上*/
+	}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

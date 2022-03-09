@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>属性选择器</title>
+	<meta chasrset="utf-8">
+	<style type="text/css">
+	/*div[class] {选出所有是class的属性
+		background-color: pink;
+	}*/
+	/*div[class^=a] {选出所有以a开头的属性
+		background-color: pink;
+	}*/
+	/*div[class$=c] {选出所有以c结尾的属性
+		background-color: pink;
+	}*/
+	div[class*=b] {/*选出只要有属性名有b的属性*/
+		background-color: green;
+	}
+	div[class=a] {/*选出属性名为a的属性*/
+		background-color: pink;
+	}
+	</style>
+</head>
+<body>
+	<div class="a">1</div>
+	<div>2</div>
+	<div class="abc">3</div>
+	<div class="b">4</div>
+	<div>5</div>
+</body>
+</html>

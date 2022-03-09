@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>伪元素选择器</title>
+	<meta chasrset="utf-8">
+	<style type="text/css">
+	div::before {/*在内容内部前面插入”我“ ，必须带有content元素*/
+		content: "我"
+	}
+	div::after {/*在内容内部后面插入拉拉“ ，必须带有content元素*/
+		content: "拉拉"
+	}
+	</style>
+</head>
+<body>
+	<div>哈哈</div>
+</body>
+</html>

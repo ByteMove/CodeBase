@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>导航栏</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.site-r a{
+			color: red;
+		}
+		.nav a{/*后代选择器*/
+			color: orange;
+		}
+		.nav,.sitenav a{/*并集选择器*/
+			font: 14px "微软雅黑";
+		}
+		.nav > ul > li > a{/*子代选择器*/
+			color: green;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="#">公司首页</a></li>
+			<li><a href="#">公司简介</a></li>
+			<li><a href="#">公司产品</a></li>
+			<li>
+				<a href="#">公司首页</a>
+				<ul>
+					<li><a href="#">公司邮箱</a></li>
+					<li><a href="#">公司电话</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="sitenav">
+		<div class="site-l">左侧导航栏</div>
+		<div class="site-r"><a href="#">登录</a></div>
+	</div>
+</body>
+</html>
